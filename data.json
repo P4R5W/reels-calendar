@@ -1,0 +1,232 @@
+{
+ "v": 1,
+ "startWeek": "2026-11-28",
+ "seq": 0,
+ "slots": [
+  "11:00",
+  "13:00",
+  "15:00",
+  "17:00",
+  "18:30",
+  "20:00",
+  "21:00"
+ ],
+ "settings": {
+  "earliest": "11:00",
+  "latest": "20:00",
+  "minDayGap": 2,
+  "maxPerDay": 2,
+  "minHourGap": 3,
+  "explore": 0.4,
+  "learn": 0.5,
+  "buildDay": 4,
+  "buildHour": 20,
+  "blocked": []
+ },
+ "pages": [
+  {
+   "id": "ke",
+   "name": "خانه اقتصاد",
+   "perWeek": 2,
+   "color": "green",
+   "active": true,
+   "dayW": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    85,
+    80
+   ],
+   "timeW": {
+    "11:00": 65,
+    "13:00": 75,
+    "15:00": 65,
+    "17:00": 75,
+    "18:30": 85,
+    "20:00": 90,
+    "21:00": 90
+   }
+  },
+  {
+   "id": "xd",
+   "name": "ایکس‌دیجیتال",
+   "perWeek": 2,
+   "color": "purple",
+   "active": true,
+   "dayW": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    85,
+    80
+   ],
+   "timeW": {
+    "11:00": 65,
+    "13:00": 75,
+    "15:00": 65,
+    "17:00": 75,
+    "18:30": 85,
+    "20:00": 90,
+    "21:00": 90
+   }
+  },
+  {
+   "id": "xl",
+   "name": "ایکس‌لب",
+   "perWeek": 2,
+   "color": "teal",
+   "active": true,
+   "dayW": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    85,
+    80
+   ],
+   "timeW": {
+    "11:00": 65,
+    "13:00": 75,
+    "15:00": 65,
+    "17:00": 75,
+    "18:30": 85,
+    "20:00": 90,
+    "21:00": 90
+   }
+  },
+  {
+   "id": "xr",
+   "name": "ایکس‌ری",
+   "perWeek": 2,
+   "color": "navy",
+   "active": true,
+   "dayW": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    85,
+    80
+   ],
+   "timeW": {
+    "11:00": 65,
+    "13:00": 75,
+    "15:00": 65,
+    "17:00": 75,
+    "18:30": 85,
+    "20:00": 90,
+    "21:00": 90
+   }
+  }
+ ],
+ "weeks": {
+  "2026-11-28": {
+   "built": true,
+   "posts": [
+    {
+     "id": "a20261128_0",
+     "page": "ke",
+     "ymd": "2026-11-28",
+     "time": "20:00",
+     "reason": "peak",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_1",
+     "page": "xr",
+     "ymd": "2026-11-29",
+     "time": "18:30",
+     "reason": "peak",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_2",
+     "page": "xd",
+     "ymd": "2026-11-30",
+     "time": "13:00",
+     "reason": "test",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_3",
+     "page": "xr",
+     "ymd": "2026-12-01",
+     "time": "20:00",
+     "reason": "peak",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_4",
+     "page": "xl",
+     "ymd": "2026-12-02",
+     "time": "17:00",
+     "reason": "test",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_5",
+     "page": "ke",
+     "ymd": "2026-12-03",
+     "time": "20:00",
+     "reason": "peak",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_6",
+     "page": "xd",
+     "ymd": "2026-12-04",
+     "time": "13:00",
+     "reason": "test",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    },
+    {
+     "id": "a20261128_7",
+     "page": "xl",
+     "ymd": "2026-12-04",
+     "time": "18:30",
+     "reason": "peak",
+     "manual": false,
+     "title": "",
+     "note": "",
+     "views": null,
+     "posted": false
+    }
+   ],
+   "warnings": []
+  }
+ }
+}

@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F3EEE8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1418" media="(prefers-color-scheme: dark)">
+<title>تقویم انتشار ریلز</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23141E26'%2F%3E%3Crect%20x%3D'14'%20y%3D'17'%20width%3D'36'%20height%3D'33'%20rx%3D'7'%20fill%3D'none'%20stroke%3D'%23D6A956'%20stroke-width%3D'4'%2F%3E%3Cpath%20d%3D'M14%2028h36M25%2011v10M39%2011v10'%20stroke%3D'%23D6A956'%20stroke-width%3D'4'%20stroke-linecap%3D'round'%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:Vazirmatn;src:url(fonts/Vazirmatn.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+:root{--bg:#F3EEE8;--ink:#141A1F;--muted:#8C8178;--card:#FFFFFF;--alt:#FBF8F4;--line:#EEE6DD;--gold:#D6A956;--goldInk:#A27428;--tabbg:#E8E0D6;--tabon:#141E26;--tabonInk:#D6A956;--tabInk:#6E645B;--n1:#1C2B35;--n2:#0E181E;--input:#FFFFFF;--inLine:#DED3C7;--danger:#B93A27;--shadow:rgba(70,45,20,.08);--ring:transparent;--none:#DCD2C7;--warnBg:#FFF4D6;--warnInk:#7A5A00;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1418;--ink:#EEE7DE;--muted:#9AA3A9;--card:#172127;--alt:#141D22;--line:#243039;--gold:#D9AE5F;--goldInk:#E2BC74;--tabbg:#1B262D;--tabon:#D9AE5F;--tabonInk:#141A1F;--tabInk:#A9B2B8;--n1:#1F313C;--n2:#131D23;--input:#0F171C;--inLine:#2C3A44;--danger:#F08A76;--shadow:rgba(0,0,0,.35);--ring:rgba(255,255,255,.14);--none:#33424C;--warnBg:#3A3218;--warnInk:#F2D58A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1418;--ink:#EEE7DE;--muted:#9AA3A9;--card:#172127;--alt:#141D22;--line:#243039;--gold:#D9AE5F;--goldInk:#E2BC74;--tabbg:#1B262D;--tabon:#D9AE5F;--tabonInk:#141A1F;--tabInk:#A9B2B8;--n1:#1F313C;--n2:#131D23;--input:#0F171C;--inLine:#2C3A44;--danger:#F08A76;--shadow:rgba(0,0,0,.35);--ring:rgba(255,255,255,.14);--none:#33424C;--warnBg:#3A3218;--warnInk:#F2D58A;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{background:var(--bg)}
+html.locked body{overflow:hidden}
+body{color:var(--ink);font-family:Vazirmatn,Tahoma,"Segoe UI",Arial,sans-serif;direction:rtl;-webkit-font-smoothing:antialiased;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:560px;margin:0 auto;padding:28px 16px 40px}
+h1{font-size:27px;font-weight:800;text-align:center;letter-spacing:-.2px}
+.sub{text-align:center;color:var(--muted);font-size:14px;font-weight:500;margin-top:4px}
+.modewrap{text-align:center;margin-top:10px}
+.mode{display:inline-block;background:var(--tabbg);color:var(--goldInk);font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px}
+.nextcard{margin-top:22px;background:linear-gradient(135deg,var(--n1),var(--n2));color:#F3E9D8;border-radius:24px;padding:18px 20px 16px;box-shadow:0 12px 30px rgba(20,30,38,.18)}
+.nextcard .lbl{color:#D6A956;font-size:13px;font-weight:700}
+.nrow{display:flex;align-items:baseline;gap:10px;margin:2px 0 12px}
+.big{font-size:36px;font-weight:800;color:#FFFFFF;font-variant-numeric:tabular-nums}
+.when{font-size:15px;font-weight:500;color:#D4C6B1}
+.nextcard .pill{box-shadow:0 0 0 1px rgba(255,255,255,.22)}
+.ntitle{margin-top:10px;font-size:14px;color:#EADFCB}
+.nnote{margin-top:4px;font-size:13px;color:#BFC8CE}
+.cd{margin-top:10px;font-size:13px;color:#A8B3BA}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.tools button{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:11px 8px;font:inherit;font-size:14px;font-weight:700;color:var(--ink);cursor:pointer;box-shadow:0 4px 14px var(--shadow)}
+.tools button:active{transform:scale(.98)}
+.pending{margin-top:14px;background:var(--card);border-radius:20px;padding:14px 16px 16px;box-shadow:0 8px 24px var(--shadow)}
+.phead{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:4px}
+.phead b{font-size:15px;font-weight:800}
+.phead small{font-size:12px;color:var(--muted)}
+.prow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid var(--line);cursor:text}
+.pinfo{display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-width:0}
+.pinfo small{font-size:12px;color:var(--muted)}
+.prow input{width:112px;flex:none;text-align:center}
+.perr{color:var(--danger);font-size:13px;margin:6px 0 0}
+.tabs{display:flex;background:var(--tabbg);border-radius:15px;padding:4px;margin:22px 0 8px}
+.tabs button{flex:1;border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;color:var(--tabInk);padding:9px 0;border-radius:12px;cursor:pointer}
+.tabs button.on{background:var(--tabon);color:var(--tabonInk)}
+.wlabel{text-align:center;color:var(--muted);font-size:13px;font-weight:500;margin:6px 0 12px}
+.notice{background:var(--alt);border:1px solid var(--line);color:var(--muted);font-size:13px;border-radius:14px;padding:10px 14px;margin-bottom:10px;text-align:center}
+.warn{background:var(--warnBg);color:var(--warnInk);font-size:13px;border-radius:14px;padding:10px 14px;margin-bottom:10px}
+.card{background:var(--card);border-radius:24px;overflow:hidden;box-shadow:0 10px 30px var(--shadow)}
+.day{display:flex;align-items:center;gap:12px;padding:14px 18px;min-height:66px;border-top:1px solid var(--line)}
+.day:first-child{border-top:0}
+.day:nth-child(odd){background:var(--alt)}
+.day.today{box-shadow:inset -4px 0 0 var(--gold)}
+.dname{width:70px;flex:none}
+.dname b{display:block;font-size:16px;font-weight:800}
+.dname small{display:block;font-size:12px;color:var(--muted);margin-top:1px}
+.day.today .dname small{color:var(--goldInk);font-weight:700}
+.day.past .dname{opacity:.5}
+.posts{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.post{display:flex;align-items:center;flex-wrap:wrap;gap:4px 10px}
+button.post{background:none;border:0;font:inherit;color:inherit;text-align:inherit;cursor:pointer;border-radius:14px;padding:3px;margin:-3px}
+button.post:hover .pill{filter:brightness(1.07)}
+.time{font-size:15px;font-weight:800;min-width:44px;font-variant-numeric:tabular-nums}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;box-shadow:0 0 0 1px var(--ring)}
+.pill i{width:7px;height:7px;border-radius:50%;flex:none}
+.ttl{flex-basis:100%;padding-right:54px;font-size:12px;color:var(--muted)}
+.ttl.meta{color:var(--goldInk)}
+.post.done{opacity:.42}
+.post.next .pill{box-shadow:0 0 0 2px var(--card),0 0 0 4px var(--gold)}
+.none{display:block;width:26px;height:2px;border-radius:2px;background:var(--none)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.pcard{background:var(--card);border-radius:20px;padding:16px 10px 14px;text-align:center;box-shadow:0 6px 20px var(--shadow)}
+.pcard .pill{font-size:13px;padding:6px 13px}
+.pcard p{margin-top:10px;font-size:14px;font-weight:700;line-height:1.9}
+.empty{background:var(--card);border-radius:24px;padding:30px 22px;text-align:center;color:var(--muted);font-size:14px;line-height:1.9}
+.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:22px;line-height:1.8}
+.btn{border:0;border-radius:14px;padding:12px 16px;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.btn.wide{width:100%;margin-top:12px}
+.btn.primary{background:var(--tabon);color:var(--tabonInk)}
+.btn.danger{background:transparent;color:var(--danger)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px dashed var(--inLine);width:100%;margin-top:6px;font-size:14px;padding:10px}
+input,select{font:inherit;font-size:16px;color:var(--ink);background:var(--input);border:1px solid var(--inLine);border-radius:12px;padding:10px 12px;width:100%;min-width:0}
+input[type=time]{direction:ltr;text-align:right}
+input[type=checkbox]{width:20px;height:20px;padding:0;accent-color:var(--gold);flex:none}
+input[type=range]{padding:0;border:0;background:transparent;accent-color:var(--gold)}
+input.bad{border-color:var(--danger)}
+input:focus,select:focus,button:focus-visible,.sheet:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.sheet:focus{outline:none}
+#sheetwrap{position:fixed;inset:0;z-index:50}
+.backdrop{position:absolute;inset:0;background:rgba(10,14,18,.45)}
+.sheet{position:absolute;left:0;right:0;bottom:0;margin:0 auto;max-width:560px;max-height:90%;display:flex;flex-direction:column;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.2);padding-bottom:env(safe-area-inset-bottom,0px)}
+.shead{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+.shead b{font-size:16px;font-weight:800}
+.x{background:var(--alt);border:0;border-radius:10px;padding:6px 12px;font:inherit;font-size:13px;color:var(--muted);cursor:pointer}
+.sbody{overflow:auto;padding:14px 18px 20px;-webkit-overflow-scrolling:touch}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;font-size:13px;color:var(--muted);font-weight:500}
+.field small{font-size:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end}
+.check{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink);font-weight:500;margin-bottom:12px;cursor:pointer;min-height:44px}
+.check.big{margin-top:6px;padding:10px 12px;background:var(--alt);border-radius:14px}
+.hint{font-size:13px;color:var(--muted);margin-bottom:12px;line-height:1.8}
+.serr{color:var(--danger);font-size:13px;margin:4px 0 8px}
+.sfoot{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.sfoot .primary{flex:1}
+.grp{border-top:1px solid var(--line);padding-top:14px;margin-top:6px;margin-bottom:6px}
+.grp:first-child{border-top:0;padding-top:0;margin-top:0}
+.grp h3{font-size:14px;font-weight:800;margin-bottom:10px}
+.phead3,.prow3{display:grid;grid-template-columns:minmax(0,1fr) 56px 92px 62px;gap:6px;align-items:center}
+.phead3{font-size:12px;color:var(--muted);margin-bottom:6px}
+.prow3{margin-bottom:6px}
+.prow3 input[name=pweek]{text-align:center;padding:10px 4px}
+.prow3 select{padding:10px 6px;font-size:14px}
+.prow3 .check{margin:0;font-size:13px;gap:5px}
+.scrollx{overflow-x:auto;margin:0 -18px;padding:0 18px 4px}
+table{border-collapse:collapse}
+.aud th,.aud td{padding:3px;font-size:12px;font-weight:500;color:var(--muted);white-space:nowrap}
+.aud tbody th{color:var(--ink);font-weight:700;padding-left:8px;text-align:right}
+.aud input{width:50px;padding:7px 2px;text-align:center;font-size:14px}
+.perf{background:var(--alt);border-radius:16px;padding:12px;margin-bottom:10px}
+.perfhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.perfhead small{font-size:12px;color:var(--muted)}
+.perf table{width:100%;font-size:14px}
+.perf th,.perf td{padding:6px 4px;text-align:center;border-bottom:1px solid var(--line)}
+.perf th{font-size:12px;color:var(--muted);font-weight:500}
+.perf tr.best td{color:var(--goldInk);font-weight:800}
+#toast{position:fixed;left:50%;bottom:0;transform:translate(-50%,140%);margin-bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#141E26;color:#F3E9D8;font-size:14px;font-weight:500;padding:10px 18px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:60;transition:transform .25s ease;max-width:calc(100% - 32px);text-align:center}
+#toast.show{transform:translate(-50%,0)}
+html.busy .tools button,html.busy .btn{opacity:.6;pointer-events:none}
+@media (max-width:370px){.day{padding:12px 14px}.dname{width:62px}.pill{padding:6px 12px;font-size:13px}.time{min-width:40px;font-size:14px}.ttl{padding-right:50px}}
+.linkbtn{background:none;border:0;font:inherit;font-size:13px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px 12px}
+.loading{padding:90px 20px;text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main id="root" class="wrap"></main>
+<script>(function () {
+  'use strict';
+
+  /* ───────── ثابت‌ها ───────── */
+  var TZ_OFF = 210; // دقیقه؛ ایران ساعت تابستانی ندارد
+  var DAY = ['شنبه', 'یکشنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه'];
+  var MONTHS = ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'];
+  var COLORS = {
+    green: { label: 'سبز تیره', bg: '#24443A', bg2: '#16261F', fg: '#E8CD9A', dot: '#C9A35F' },
+    purple: { label: 'بنفش', bg: '#9C4BF2', bg2: '#5B3FDB', fg: '#FFFFFF', dot: '#E9E0FF' },
+    teal: { label: 'فیروزه‌ای', bg: '#31E3B0', bg2: '#12A482', fg: '#0C1F19', dot: '#0C1F19' },
+    navy: { label: 'سرمه‌ای', bg: '#0F3140', bg2: '#031820', fg: '#EBDCC0', dot: '#D9A54A' },
+    grey: { label: 'طوسی', bg: '#6B7780', bg2: '#48525A', fg: '#FFFFFF', dot: '#E5E7EB' },
+    orange: { label: 'نارنجی', bg: '#F7A24A', bg2: '#E07612', fg: '#1A1205', dot: '#1A1205' },
+    red: { label: 'قرمز', bg: '#EC5246', bg2: '#B5251B', fg: '#FFFFFF', dot: '#FFE1DE' },
+    yellow: { label: 'زرد', bg: '#F9D452', bg2: '#E8AE10', fg: '#1A1405', dot: '#1A1405' }
+  };
+  var REASON = { peak: 'اوج مخاطب', win: 'ساعت برنده', test: 'تست ساعت تازه', retest: 'تست دوباره', manual: 'دستی' };
+  var W = { CROWD: 0.05, SAME_SLOT: 0.05, SAME_TIME: 0.02, BACK_TO_BACK: 0.15, NOISE: 0.35, JITTER: 0.02, SHRINK: 2, HISTORY: 30, SHORT: 10 };
+  var DEFAULT_SLOTS = ['11:00', '13:00', '15:00', '17:00', '18:30', '20:00', '21:00'];
+  var DEFAULT_TIME_W = [65, 75, 65, 75, 85, 90, 90];
+  var DEFAULT_DAY_W = [80, 80, 80, 80, 80, 85, 80];
+  var HEAD = [
+    '<meta charset="utf-8">',
+    '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+    '<title>تقویم انتشار ریلز</title>',
+    '<link rel="preconnect" href="https://fonts.googleapis.com">',
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+    '<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">'
+  ].join('\n');
+
+  /* ───────── ابزار ───────── */
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function fa(s) { return String(s).replace(/[0-9]/g, function (c) { return String.fromCharCode(1776 + Number(c)); }); }
+  function en(s) {
+    return String(s == null ? '' : s)
+      .replace(/[\u06F0-\u06F9]/g, function (c) { return String(c.charCodeAt(0) - 1776); })
+      .replace(/[\u0660-\u0669]/g, function (c) { return String(c.charCodeAt(0) - 1632); });
+  }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function clamp(x, lo, hi) { return Math.min(hi, Math.max(lo, x)); }
+  function num(x, def) {
+    if (typeof x === 'number' && isFinite(x)) return x;
+    var s = en(x).replace(/[,\u066C\s]/g, '').replace('\u066B', '.');
+    if (!s) return def;
+    var n = Number(s);
+    return isFinite(n) ? n : def;
+  }
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function grouped(n) { return fa(String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '\u066C')); }
+  function compact(n) {
+    if (n >= 1e6) return fa((n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace('.', '\u066B')) + ' میلیون';
+    if (n >= 1e5) return fa(Math.round(n / 1e3)) + ' هزار';
+    return grouped(n);
+  }
+  function median(a) {
+    var s = a.slice().sort(function (x, y) { return x - y; }), m = s.length >> 1;
+    return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+  }
+
+  /* ───────── تاریخ و ساعت (همه به وقت تهران) ───────── */
+  function ymdUtc(ymd) { var p = ymd.split('-'); return Date.UTC(+p[0], +p[1] - 1, +p[2]); }
+  function ymdOf(ms) { var d = new Date(ms); return d.getUTCFullYear() + '-' + pad2(d.getUTCMonth() + 1) + '-' + pad2(d.getUTCDate()); }
+  function addDays(ymd, n) { return ymdOf(ymdUtc(ymd) + n * 86400000); }
+  function pday(ymd) { return (new Date(ymdUtc(ymd)).getUTCDay() + 1) % 7; } // شنبه = ۰
+  function weekOf(ymd) { return addDays(ymd, -pday(ymd)); }
+  function toMin(hhmm) { var p = String(hhmm).split(':'); return Number(p[0]) * 60 + Number(p[1]); }
+  function hm(m) { return pad2(Math.floor(m / 60)) + ':' + pad2(m % 60); }
+  function tsOf(ymd, hhmm) { return ymdUtc(ymd) + (toMin(hhmm) - TZ_OFF) * 60000; }
+  function nowT(ms) { var t = ms + TZ_OFF * 60000, d = new Date(t); return { ymd: ymdOf(t), min: d.getUTCHours() * 60 + d.getUTCMinutes() }; }
+
+  function toJalali(gy, gm, gd) {
+    var gdm = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    var gy2 = gm > 2 ? gy + 1 : gy;
+    var days = 355666 + 365 * gy + Math.floor((gy2 + 3) / 4) - Math.floor((gy2 + 99) / 100) + Math.floor((gy2 + 399) / 400) + gd + gdm[gm - 1];
+    var jy = -1595 + 33 * Math.floor(days / 12053);
+    days %= 12053;
+    jy += 4 * Math.floor(days / 1461);
+    days %= 1461;
+    if (days > 365) { jy += Math.floor((days - 1) / 365); days = (days - 1) % 365; }
+    var jm = days < 186 ? 1 + Math.floor(days / 31) : 7 + Math.floor((days - 186) / 30);
+    var jd = 1 + (days < 186 ? days % 31 : (days - 186) % 30);
+    return [jy, jm, jd];
+  }
+  function toGregorian(jy, jm, jd) {
+    jy += 1595;
+    var days = -355668 + 365 * jy + Math.floor(jy / 33) * 8 + Math.floor(((jy % 33) + 3) / 4) + jd + (jm < 7 ? (jm - 1) * 31 : (jm - 7) * 30 + 186);
+    var gy = 400 * Math.floor(days / 146097);
+    days %= 146097;
+    if (days > 36524) { gy += 100 * Math.floor(--days / 36524); days %= 36524; if (days >= 365) days++; }
+    gy += 4 * Math.floor(days / 1461);
+    days %= 1461;
+    if (days > 365) { gy += Math.floor((days - 1) / 365); days = (days - 1) % 365; }
+    var gd = days + 1;
+    var ml = [0, 31, (gy % 4 === 0 && gy % 100 !== 0) || gy % 400 === 0 ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var gm;
+    for (gm = 0; gm < 13 && gd > ml[gm]; gm++) gd -= ml[gm];
+    return [gy, gm, gd];
+  }
+  function jParts(ymd) { var p = ymd.split('-').map(Number); return toJalali(p[0], p[1], p[2]); }
+  function jDate(ymd) { var j = jParts(ymd); return fa(j[2]) + ' ' + MONTHS[j[1] - 1]; }
+  function jSlash(ymd) { var j = jParts(ymd); return j[0] + '/' + pad2(j[1]) + '/' + pad2(j[2]); }
+  function parseJalali(s) {
+    var m = en(s).trim().match(/^(1[34]\d\d)[\/\-.](\d{1,2})[\/\-.](\d{1,2})$/);
+    if (!m) return null;
+    var jm = +m[2], jd = +m[3];
+    if (jm < 1 || jm > 12 || jd < 1 || jd > 31 || (jm > 6 && jd > 30)) return null;
+    var g = toGregorian(+m[1], jm, jd);
+    return g[0] + '-' + pad2(g[1]) + '-' + pad2(g[2]);
+  }
+  function weekLabel(ws) {
+    var a = jParts(ws), b = jParts(addDays(ws, 6));
+    if (a[0] === b[0] && a[1] === b[1]) return fa(a[2]) + ' تا ' + fa(b[2]) + ' ' + MONTHS[b[1] - 1] + ' ' + fa(b[0]);
+    if (a[0] === b[0]) return fa(a[2]) + ' ' + MONTHS[a[1] - 1] + ' تا ' + fa(b[2]) + ' ' + MONTHS[b[1] - 1] + ' ' + fa(b[0]);
+    return fa(a[2]) + ' ' + MONTHS[a[1] - 1] + ' ' + fa(a[0]) + ' تا ' + fa(b[2]) + ' ' + MONTHS[b[1] - 1] + ' ' + fa(b[0]);
+  }
+  function parseTime(s) {
+    var t = en(s).trim().toLowerCase();
+    var m = t.match(/^(\d{1,2})[:.](\d{2})(?::\d{2})?\s*(am|pm|ق\.?\s?ظ|ب\.?\s?ظ)?$/);
+    if (!m) { var h = t.match(/^(\d{1,2})$/); if (!h) return null; m = [h[0], h[1], '00', '']; }
+    var hh = Number(m[1]), mm = Number(m[2]), ap = m[3] || '';
+    if ((ap === 'pm' || ap.charAt(0) === 'ب') && hh < 12) hh += 12;
+    if ((ap === 'am' || ap.charAt(0) === 'ق') && hh === 12) hh = 0;
+    if (hh > 23 || mm > 59) return null;
+    return pad2(hh) + ':' + pad2(mm);
+  }
+  function parseViews(x) {
+    var s = en(x).toLowerCase().replace(/[,\u066C\s]/g, '').replace('\u066B', '.');
+    if (!s) return null;
+    var mult = 1;
+    if (/(k|هزار|کا)$/.test(s)) { mult = 1e3; s = s.replace(/(k|هزار|کا)$/, ''); }
+    else if (/(m|میلیون)$/.test(s)) { mult = 1e6; s = s.replace(/(m|میلیون)$/, ''); }
+    var n = parseFloat(s);
+    return isFinite(n) && n >= 0 ? Math.round(n * mult) : NaN;
+  }
+
+  /* ───────── موتور برنامه‌ریز ───────── */
+  // امتیاز هر (پیج، روز، ساعت) = فعالیت مخاطب + اثر یادگرفته‌شده از ویوها
+  //   + تست هوشمند (هرجا داده کمتر، نوسان بیشتر) − جریمه تکرار هفته قبل
+  function hash(str) {
+    var h = 2166136261;
+    for (var i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+  function rng(seed) {
+    var a = seed >>> 0;
+    return function () {
+      a = (a + 0x6D2B79F5) >>> 0;
+      var t = a;
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function gauss(r) { return (r() + r() + r() + r() - 2) * 1.7320508075688772; }
+  function shuffle(arr, r) {
+    for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)), t = arr[i]; arr[i] = arr[j]; arr[j] = t; }
+    return arr;
+  }
+  function nearest(min, slotMin) {
+    var b = 0;
+    for (var i = 1; i < slotMin.length; i++) if (Math.abs(slotMin[i] - min) < Math.abs(slotMin[b] - min)) b = i;
+    return b;
+  }
+  function byYT(a, b) { var x = a.ymd + ' ' + a.time, y = b.ymd + ' ' + b.time; return x < y ? -1 : x > y ? 1 : 0; }
+
+  function learn(history, page, slotMin) {
+    var n = slotMin.length;
+    function z(k) { var a = []; for (var i = 0; i < k; i++) a.push(0); return a; }
+    var res = { tEff: z(n), tN: z(n), dEff: z(7), dN: z(7), count: 0 };
+    var rows = history.filter(function (h) { return h.page === page && h.views > 0 && h.time; }).sort(byYT).slice(-W.HISTORY);
+    res.count = rows.length;
+    if (!rows.length || !n) return res;
+    var med = median(rows.map(function (r) { return r.views; }));
+    var tSum = z(n), dSum = z(7);
+    rows.forEach(function (r) {
+      var m = toMin(r.time), t = nearest(m, slotMin), near = Math.abs(slotMin[t] - m) <= 45;
+      if (near) res.tN[t]++;
+      res.dN[r.dayIdx]++;
+      if (rows.length >= 3) {
+        var x = clamp(Math.log((r.views + 1) / (med + 1)), -1.5, 1.5);
+        if (near) tSum[t] += x;
+        dSum[r.dayIdx] += x;
+      }
+    });
+    for (var i = 0; i < n; i++) res.tEff[i] = tSum[i] / (res.tN[i] + W.SHRINK);
+    for (var d = 0; d < 7; d++) res.dEff[d] = dSum[d] / (res.dN[d] + W.SHRINK);
+    return res;
+  }
+
+  // بهترین روزها و ساعت‌ها برای یک پیج، با توجه به پست‌هایی که قبلاً چیده شده‌اند
+  function bestCombo(page, need, placed, Sp, slots, slotMin, days, R) {
+    var mine = placed.filter(function (x) { return x.page === page; }).map(function (x) { return x.dayIdx; });
+    var perDay = [];
+    for (var d = 0; d < 7; d++) {
+      perDay.push(null);
+      if (days[d].blocked) continue;
+      if (mine.some(function (md) { return Math.abs(md - d) < R.minDayGap; })) continue;
+      var onDay = placed.filter(function (x) { return x.dayIdx === d; });
+      if (onDay.length >= R.maxPerDay) continue;
+      var best = null;
+      for (var t = 0; t < slots.length; t++) {
+        if (days[d].minMin && slotMin[t] < days[d].minMin) continue;
+        if (onDay.some(function (x) { return Math.abs(x.min - slotMin[t]) < R.minHourGap * 60; })) continue;
+        var sc = Sp[d][t].s - (onDay.length ? W.CROWD : 0);
+        if (!best || sc > best.sc) best = { t: t, sc: sc };
+      }
+      perDay[d] = best;
+    }
+    var cand = [];
+    perDay.forEach(function (x, d) { if (x) cand.push(d); });
+    var bestSet = null, bestSum = -Infinity, pick = [];
+    (function rec(i, sum) {
+      if (pick.length === need) { if (sum > bestSum) { bestSum = sum; bestSet = pick.slice(); } return; }
+      for (var k = i; k < cand.length; k++) {
+        var dd = cand[k];
+        if (pick.some(function (q) { return Math.abs(q - dd) < R.minDayGap; })) continue;
+        pick.push(dd); rec(k + 1, sum + perDay[dd].sc); pick.pop();
+      }
+    })(0, 0);
+    if (!bestSet) return null;
+    return bestSet.map(function (d) { return { page: page, dayIdx: d, time: slots[perDay[d].t], min: slotMin[perDay[d].t], t: perDay[d].t }; });
+  }
+
+  function planWeek(input) {
+    var rules = input.rules, slots = input.slots, slotMin = slots.map(toMin);
+    var pages = input.pages.filter(function (p) { return p.perWeek > 0; });
+    var orderRnd = rng(hash('order|' + input.seed));
+    var last = {};
+    (input.lastWeek || []).forEach(function (x) {
+      var k = last[x.page] = last[x.page] || { slots: {}, times: {}, maxDay: -1 };
+      k.slots[x.dayIdx + '|' + x.time] = true;
+      k.times[x.time] = true;
+      k.maxDay = Math.max(k.maxDay, x.dayIdx);
+    });
+    var L = {}, S = {}, top = {};
+    pages.forEach(function (p) {
+      var l = L[p.name] = learn(input.history || [], p.name, slotMin);
+      var lw = last[p.name];
+      var r = rng(hash('score|' + input.seed + '|' + p.name));
+      S[p.name] = [];
+      top[p.name] = 0;
+      for (var d = 0; d < 7; d++) {
+        var row = [];
+        for (var t = 0; t < slots.length; t++) {
+          var base = (p.dayW[d] / 100) * (p.timeW[t] / 100);
+          top[p.name] = Math.max(top[p.name], base);
+          var s = base + rules.learn * (l.tEff[t] + 0.6 * l.dEff[d]);
+          s += rules.explore * W.NOISE * gauss(r) / Math.sqrt(1 + l.tN[t] + 0.5 * l.dN[d]);
+          s += W.JITTER * (r() - 0.5);
+          if (lw) {
+            if (lw.slots[d + '|' + slots[t]]) s -= W.SAME_SLOT;
+            if (lw.times[slots[t]]) s -= W.SAME_TIME;
+            if (lw.maxDay >= 0 && 7 + d - lw.maxDay < rules.minDayGap) s -= W.BACK_TO_BACK;
+          }
+          row.push({ s: s, base: base });
+        }
+        S[p.name].push(row);
+      }
+    });
+
+    var pins = (input.pins || []).map(function (x) { return { page: x.page, dayIdx: x.dayIdx, time: x.time, min: toMin(x.time), t: -1, pinned: true }; });
+    var need = {};
+    pages.forEach(function (p) {
+      need[p.name] = Math.max(0, Math.min(7, p.perWeek) - pins.filter(function (x) { return x.page === p.name; }).length);
+    });
+    function objective(placed) {
+      var total = 0, cnt = [0, 0, 0, 0, 0, 0, 0];
+      placed.forEach(function (x) { cnt[x.dayIdx]++; if (!x.pinned) total += S[x.page][x.dayIdx][x.t].s; });
+      cnt.forEach(function (c) { if (c > 1) total -= W.CROWD * (c - 1); });
+      return total;
+    }
+    function placeFor(p, k, rest, R, partial) {
+      for (var n = k; n >= (partial ? 0 : k); n--) {
+        if (n === 0) return [];
+        var c = bestCombo(p.name, n, rest, S[p.name], slots, slotMin, input.days, R);
+        if (c) return c;
+      }
+      return null;
+    }
+    function solve(R, partial) {
+      var best = null;
+      for (var it = 0; it < 40; it++) {
+        var placed = pins.slice(), got = {}, short = 0, ok = true;
+        var order = shuffle(pages.slice(), orderRnd);
+        for (var i = 0; i < order.length && ok; i++) {
+          var p = order[i];
+          if (!need[p.name]) { got[p.name] = 0; continue; }
+          var c = placeFor(p, need[p.name], placed, R, partial);
+          if (!c) { ok = false; break; }
+          got[p.name] = c.length;
+          short += need[p.name] - c.length;
+          placed = placed.concat(c);
+        }
+        if (!ok) continue;
+        var cur = objective(placed) - W.SHORT * short;
+        for (var round = 0; round < 6; round++) {
+          var improved = false;
+          pages.forEach(function (pg) {
+            if (!got[pg.name]) return;
+            var rest = placed.filter(function (x) { return x.pinned || x.page !== pg.name; });
+            var c2 = bestCombo(pg.name, got[pg.name], rest, S[pg.name], slots, slotMin, input.days, R);
+            if (!c2) return;
+            var cand = rest.concat(c2), val = objective(cand) - W.SHORT * short;
+            if (val > cur + 1e-9) { placed = cand; cur = val; improved = true; }
+          });
+          if (!improved) break;
+        }
+        if (!best || cur > best.val + 1e-9) best = { placed: placed, val: cur, short: short };
+      }
+      return best;
+    }
+
+    var relax = [
+      [{}, ''],
+      [{ minHourGap: Math.max(0, rules.minHourGap - 1) }, 'فاصله ساعتی ریلزهای یک روز کمی کمتر از تنظیمات شد'],
+      [{ minHourGap: Math.max(0, rules.minHourGap - 1), maxPerDay: rules.maxPerDay + 1 }, 'برای جا شدن همه ریلزها سقف ریلز روزانه یکی بیشتر شد'],
+      [{ minHourGap: 1, maxPerDay: rules.maxPerDay + 2, minDayGap: Math.max(1, rules.minDayGap - 1) }, 'قانون‌های فاصله برای جا شدن همه ریلزها شل شد'],
+      [{ minHourGap: 0, maxPerDay: 99, minDayGap: 1 }, 'قانون‌های فاصله کنار گذاشته شد']
+    ];
+    var warnings = [], sol = null;
+    if (!slots.length) warnings.push('هیچ ساعتی در بازه انتشار نیست');
+    for (var i = 0; i < relax.length && !sol && slots.length; i++) {
+      sol = solve(Object.assign({}, rules, relax[i][0]), false);
+      if (sol && relax[i][1]) warnings.push(relax[i][1]);
+    }
+    if (!sol && slots.length) {
+      sol = solve(Object.assign({}, rules, relax[relax.length - 1][0]), true);
+      if (sol && sol.short) warnings.push('برای ' + fa(sol.short) + ' ریلز جایی در باقی‌مانده هفته پیدا نشد');
+    }
+    if (!sol) sol = { placed: pins.slice(), short: 0 };
+
+    var posts = sol.placed.map(function (x) {
+      if (x.pinned) return { page: x.page, dayIdx: x.dayIdx, time: x.time, pinned: true, reason: 'manual' };
+      var l = L[x.page], cell = S[x.page][x.dayIdx][x.t], reason;
+      if (l.tN[x.t] >= 2 && l.tEff[x.t] >= 0.12) reason = 'win';
+      else if (cell.base >= 0.85 * top[x.page]) reason = 'peak';
+      else reason = l.tN[x.t] < 2 ? 'test' : 'retest';
+      return { page: x.page, dayIdx: x.dayIdx, time: x.time, pinned: false, reason: reason };
+    }).sort(function (a, b) { return a.dayIdx - b.dayIdx || toMin(a.time) - toMin(b.time); });
+    return { posts: posts, warnings: warnings };
+  }
+
+  /* ───────── داده‌ها ───────── */
+  function pageById(st, id) { for (var i = 0; i < st.pages.length; i++) if (st.pages[i].id === id) return st.pages[i]; return null; }
+  function colorOf(st, id) { var p = pageById(st, id); return (p && COLORS[p.color]) || COLORS.grey; }
+  function windowSlots(st) {
+    var a = toMin(st.settings.earliest), b = toMin(st.settings.latest);
+    return st.slots.filter(function (s) { var m = toMin(s); return m >= a && m <= b; });
+  }
+  function buildTime(st, ws) { return tsOf(addDays(ws, st.settings.buildDay - 7), pad2(st.settings.buildHour) + ':00'); }
+  function isDue(st, ws, now) { return ws === st.startWeek || now >= buildTime(st, ws); }
+  function byTime(a, b) { return byYT(a, b) || (a.page < b.page ? -1 : a.page > b.page ? 1 : 0); }
+  function allPosts(st) {
+    var out = [];
+    Object.keys(st.weeks).sort().forEach(function (w) { st.weeks[w].posts.forEach(function (p) { out.push(p); }); });
+    return out;
+  }
+  function findPost(st, id) {
+    var ws = Object.keys(st.weeks);
+    for (var i = 0; i < ws.length; i++) {
+      var list = st.weeks[ws[i]].posts;
+      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { week: ws[i], post: list[j], index: j };
+    }
+    return null;
+  }
+  function planFor(st, ws, keep, now) {
+    var slots = windowSlots(st), t = now != null ? nowT(now) : null;
+    var days = [];
+    for (var i = 0; i < 7; i++) {
+      var ymd = addDays(ws, i), blocked = st.settings.blocked.indexOf(ymd) >= 0, minMin = 0;
+      if (t) { if (ymd < t.ymd) blocked = true; else if (ymd === t.ymd) minMin = t.min + 30; }
+      days.push({ ymd: ymd, blocked: blocked, minMin: minMin });
+    }
+    var prev = st.weeks[addDays(ws, -7)];
+    return planWeek({
+      seed: ws,
+      days: days,
+      slots: slots,
+      rules: st.settings,
+      pages: st.pages.filter(function (p) { return p.active && p.perWeek > 0; }).map(function (p) {
+        return { name: p.id, perWeek: p.perWeek, dayW: p.dayW, timeW: slots.map(function (s) { return p.timeW[s] != null ? p.timeW[s] : 70; }) };
+      }),
+      pins: keep.map(function (p) { return { page: p.page, dayIdx: pday(p.ymd), time: p.time }; }),
+      history: allPosts(st).filter(function (p) { return p.ymd < ws && p.views > 0; })
+        .map(function (p) { return { page: p.page, ymd: p.ymd, dayIdx: pday(p.ymd), time: p.time, views: p.views }; }),
+      lastWeek: prev ? prev.posts.map(function (p) { return { page: p.page, dayIdx: pday(p.ymd), time: p.time }; }) : []
+    });
+  }
+  function newPost(id, page, ymd, time, reason, extra) {
+    var p = { id: id, page: page, ymd: ymd, time: time, reason: reason, manual: reason === 'manual', title: '', note: '', views: null, posted: false };
+    if (extra) { p.title = extra.title || ''; p.note = extra.note || ''; }
+    return p;
+  }
+  // هفته‌هایی که موعد ساختشان رسیده، از روی همین داده‌ها و همیشه یکسان ساخته می‌شوند
+  function materialize(st0, now) {
+    var st = clone(st0), cur = weekOf(nowT(now).ymd), nxt = addDays(cur, 7);
+    for (var w = st.startWeek; w <= nxt; w = addDays(w, 7)) {
+      var wk = st.weeks[w];
+      if ((wk && wk.built) || !isDue(st, w, now)) continue;
+      var manual = wk ? wk.posts.filter(function (p) { return p.manual; }) : [];
+      var res = planFor(st, w, manual, null), i = 0;
+      var autos = res.posts.filter(function (x) { return !x.pinned; }).map(function (x) {
+        return newPost('a' + w.replace(/-/g, '') + '_' + (i++), x.page, addDays(w, x.dayIdx), x.time, x.reason);
+      });
+      st.weeks[w] = { built: true, posts: manual.concat(autos).sort(byTime), warnings: res.warnings };
+    }
+    return st;
+  }
+  // ریلزهای خودکارِ آینده دوباره چیده می‌شوند؛ دستی، گذشته، منتشرشده و ویودار ثابت می‌مانند
+  function rebuildWeek(st, ws, now) {
+    var wk = st.weeks[ws];
+    if (!wk || !wk.built) return false;
+    var keep = [], carry = {};
+    wk.posts.slice().sort(byTime).forEach(function (p) {
+      if (p.manual || p.posted || p.views != null || tsOf(p.ymd, p.time) <= now) keep.push(p);
+      else (carry[p.page] = carry[p.page] || []).push({ title: p.title, note: p.note });
+    });
+    var res = planFor(st, ws, keep, now);
+    st.seq = (st.seq || 0);
+    var autos = res.posts.filter(function (x) { return !x.pinned; }).map(function (x) {
+      return newPost('a' + ws.replace(/-/g, '') + '_r' + (++st.seq), x.page, addDays(ws, x.dayIdx), x.time, x.reason, (carry[x.page] || []).shift());
+    });
+    st.weeks[ws] = { built: true, posts: keep.concat(autos).sort(byTime), warnings: res.warnings };
+    return true;
+  }
+  function defaultPages() {
+    function tw() { var o = {}; DEFAULT_SLOTS.forEach(function (s, i) { o[s] = DEFAULT_TIME_W[i]; }); return o; }
+    return [
+      { id: 'ke', name: 'خانه اقتصاد', perWeek: 2, color: 'green', active: true, dayW: DEFAULT_DAY_W.slice(), timeW: tw() },
+      { id: 'xd', name: 'ایکس‌دیجیتال', perWeek: 2, color: 'purple', active: true, dayW: DEFAULT_DAY_W.slice(), timeW: tw() },
+      { id: 'xl', name: 'ایکس‌لب', perWeek: 2, color: 'teal', active: true, dayW: DEFAULT_DAY_W.slice(), timeW: tw() },
+      { id: 'xr', name: 'ایکس‌ری', perWeek: 2, color: 'navy', active: true, dayW: DEFAULT_DAY_W.slice(), timeW: tw() }
+    ];
+  }
+  function initialState(now) {
+    var st = {
+      v: 1, startWeek: addDays(weekOf(nowT(now).ymd), 7), seq: 0, slots: DEFAULT_SLOTS.slice(),
+      settings: { earliest: '11:00', latest: '20:00', minDayGap: 2, maxPerDay: 2, minHourGap: 3, explore: 0.4, learn: 0.5, buildDay: 4, buildHour: 20, blocked: [] },
+      pages: defaultPages(),
+      weeks: {}
+    };
+    return materialize(st, now);
+  }
+  // داده‌ای که از فایل می‌آید قبل از استفاده تمیز و محدود می‌شود
+  var RX_YMD = /^\d{4}-\d{2}-\d{2}$/, RX_ID = /^[A-Za-z0-9_-]{1,60}$/;
+  function okYmd(y) { return typeof y === 'string' && RX_YMD.test(y) && ymdOf(ymdUtc(y)) === y; }
+  function okId(x) { return typeof x === 'string' && RX_ID.test(x); }
+  function str(x, n) { return String(x == null ? '' : x).slice(0, n); }
+  function sanitize(raw, now) {
+    var st = raw && typeof raw === 'object' ? raw : {}, se = st.settings && typeof st.settings === 'object' ? st.settings : {};
+    var out = {
+      v: 1, startWeek: null, seq: Math.max(0, Math.floor(num(st.seq, 0))), slots: [], pages: [], weeks: {},
+      settings: {
+        earliest: parseTime(se.earliest) || '11:00', latest: parseTime(se.latest) || '20:00',
+        minDayGap: clamp(Math.round(num(se.minDayGap, 2)), 1, 6), maxPerDay: clamp(Math.round(num(se.maxPerDay, 2)), 1, 10),
+        minHourGap: clamp(num(se.minHourGap, 3), 0, 12), explore: clamp(num(se.explore, 0.4), 0, 1), learn: clamp(num(se.learn, 0.5), 0, 1),
+        buildDay: clamp(Math.round(num(se.buildDay, 4)), 0, 6), buildHour: clamp(Math.round(num(se.buildHour, 20)), 0, 23),
+        blocked: (Array.isArray(se.blocked) ? se.blocked : []).filter(okYmd).slice(0, 400)
+      }
+    };
+    (Array.isArray(st.slots) ? st.slots : DEFAULT_SLOTS).forEach(function (x) { var t = parseTime(x); if (t && out.slots.indexOf(t) < 0) out.slots.push(t); });
+    if (!out.slots.length) out.slots = DEFAULT_SLOTS.slice();
+    out.slots.sort(function (a, b) { return toMin(a) - toMin(b); });
+    (Array.isArray(st.pages) ? st.pages : []).forEach(function (p) {
+      if (!p || !okId(p.id) || out.pages.some(function (q) { return q.id === p.id; })) return;
+      var dayW = [], timeW = {};
+      for (var i = 0; i < 7; i++) dayW.push(clamp(num(p.dayW && p.dayW[i], 80), 0, 100));
+      if (p.timeW && typeof p.timeW === 'object') Object.keys(p.timeW).forEach(function (k) { var t = parseTime(k); if (t) timeW[t] = clamp(num(p.timeW[k], 70), 0, 100); });
+      out.pages.push({ id: p.id, name: str(p.name, 40) || p.id, perWeek: clamp(Math.round(num(p.perWeek, 2)), 0, 7), color: COLORS[p.color] ? p.color : 'grey', active: p.active !== false, dayW: dayW, timeW: timeW });
+    });
+    if (!out.pages.length) out.pages = defaultPages();
+    var weeks = st.weeks && typeof st.weeks === 'object' ? st.weeks : {};
+    Object.keys(weeks).forEach(function (w) {
+      if (!okYmd(w) || weekOf(w) !== w) return;
+      var wk = weeks[w] && typeof weeks[w] === 'object' ? weeks[w] : {}, posts = [];
+      (Array.isArray(wk.posts) ? wk.posts : []).forEach(function (p) {
+        if (!p || !okId(p.id) || !okId(p.page) || !okYmd(p.ymd) || weekOf(p.ymd) !== w) return;
+        var t = parseTime(p.time), v = p.views == null ? null : num(p.views, null);
+        if (!t) return;
+        posts.push({ id: p.id, page: p.page, ymd: p.ymd, time: t, reason: REASON[p.reason] ? p.reason : (p.manual ? 'manual' : 'test'), manual: !!p.manual,
+          title: str(p.title, 140), note: str(p.note, 200), views: v != null && v >= 0 ? Math.round(v) : null, posted: !!p.posted });
+      });
+      out.weeks[w] = { built: !!wk.built, posts: posts.sort(byTime), warnings: (Array.isArray(wk.warnings) ? wk.warnings : []).slice(0, 5).map(function (x) { return str(x, 200); }) };
+    });
+    out.startWeek = okYmd(st.startWeek) && weekOf(st.startWeek) === st.startWeek ? st.startWeek
+      : (Object.keys(out.weeks).sort()[0] || addDays(weekOf(nowT(now).ymd), 7));
+    return out;
+  }
+  function docFor(state, css, app) {
+    if (css == null) css = document.getElementById('css').textContent;
+    if (app == null) app = document.getElementById('app').textContent;
+    var json = JSON.stringify(state).replace(/</g, '\\u003c');
+    var end = '</' + 'script>';
+    return '<!DOCTYPE html>\n<html lang="fa" dir="rtl">\n<head>\n' + HEAD + '\n<style id="css">' + css + '</style>\n</head>\n<body>\n' +
+      '<main id="root" class="wrap"></main>\n' +
+      '<script type="application/json" id="state">' + json + end + '\n' +
+      '<script id="app">' + app + end + '\n</body>\n</html>\n';
+  }
+
+  var API = {
+    toJalali: toJalali, toGregorian: toGregorian, parseTime: parseTime, parseViews: parseViews, parseJalali: parseJalali,
+    weekOf: weekOf, addDays: addDays, pday: pday, tsOf: tsOf, nowT: nowT, toMin: toMin, jSlash: jSlash, weekLabel: weekLabel,
+    planWeek: planWeek, planFor: planFor, materialize: materialize, rebuildWeek: rebuildWeek, initialState: initialState,
+    allPosts: allPosts, findPost: findPost, sanitize: sanitize, buildTime: buildTime, windowSlots: windowSlots, docFor: docFor, fa: fa
+  };
+
+  /* ───────── صفحه ───────── */
+  if (typeof document === 'undefined') { globalThis.__RP = API; return; }
+
+  var CFG = { owner: "P4R5W", repo: "reels-calendar", branch: 'main', path: 'data.json' };
+  var REPO_API = 'https://api.github.com/repos/' + CFG.owner + '/' + CFG.repo, FILE_API = REPO_API + '/contents/' + CFG.path;
+  var LS_KEY = 'reelsPlanner.key';
+  var ROOT = document.getElementById('root');
+  var STATE = null, SHA = null, VIEW = null, OWNER = false, KEY = null, BUSY = false, TAB = null, SHOWN = 'w2', LAST = 0;
+
+  /* ── داده روی گیت‌هاب ── */
+  function hdr(auth, json) {
+    var h = { Accept: 'application/vnd.github+json' };
+    if (auth && KEY) h.Authorization = 'Bearer ' + KEY;
+    if (json) h['Content-Type'] = 'application/json';
+    return h;
+  }
+  function b64dec(b) {
+    var bin = atob(String(b).replace(/\s/g, '')), u = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+    return new TextDecoder().decode(u);
+  }
+  function b64enc(s) {
+    var u = new TextEncoder().encode(s), bin = '';
+    for (var i = 0; i < u.length; i += 0x8000) bin += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000));
+    return btoa(bin);
+  }
+  function httpErr(status) { var e = new Error('http ' + status); e.status = status; return e; }
+  function fetchData(needSha) {
+    return fetch(FILE_API + '?ref=' + encodeURIComponent(CFG.branch) + '&_=' + Date.now(), { headers: hdr(OWNER), cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw httpErr(r.status); return r.json(); })
+      .then(function (j) { return { state: sanitize(JSON.parse(b64dec(j.content)), Date.now()), sha: j.sha }; })
+      .catch(function (e) {
+        if (needSha) throw e;
+        return fetch(CFG.path + '?_=' + Date.now(), { cache: 'no-store' })
+          .then(function (r) { if (!r.ok) throw e; return r.json(); })
+          .then(function (raw) { return { state: sanitize(raw, Date.now()), sha: null }; });
+      });
+  }
+  function checkKey(k) {
+    return fetch(REPO_API + '?_=' + Date.now(), { headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + k }, cache: 'no-store' })
+      .then(function (r) {
+        if (r.status === 401 || r.status === 403 || r.status === 404) return false;
+        if (!r.ok) return null;
+        return r.json().then(function (j) { return !!(j && j.permissions && j.permissions.push); });
+      }, function () { return null; });
+  }
+  function rememberKey(k) { KEY = k; try { localStorage.setItem(LS_KEY, k); } catch (e) { } }
+  function forgetKey() { KEY = null; try { localStorage.removeItem(LS_KEY); } catch (e) { } }
+  function refresh(force) {
+    if (!force && (dirty() || BUSY)) return;
+    LAST = Date.now();
+    fetchData(false).then(function (d) {
+      if (!force && (dirty() || BUSY)) return;
+      if (d.sha) SHA = d.sha;
+      if (!STATE || JSON.stringify(d.state) !== JSON.stringify(STATE)) { STATE = d.state; render(); }
+    }, function () { });
+  }
+
+  /* ── نمایش ── */
+  function pill(st, id) {
+    var c = colorOf(st, id), p = pageById(st, id);
+    return '<span class="pill" style="background:linear-gradient(135deg,' + c.bg + ',' + c.bg2 + ');color:' + c.fg + '">' +
+      '<i style="background:' + c.dot + '"></i>' + esc(p ? p.name : 'پیج حذف‌شده') + '</span>';
+  }
+  function whenText(ymd, today) {
+    return ymd === today ? 'امروز' : ymd === addDays(today, 1) ? 'فردا' : DAY[pday(ymd)] + ' ' + jDate(ymd);
+  }
+  function pageOrder(st, id) { for (var k = 0; k < st.pages.length; k++) if (st.pages[k].id === id) return k; return 99; }
+
+  function render() {
+    if (!STATE) return;
+    var now = Date.now(), t = nowT(now), st = VIEW = materialize(STATE, now);
+    var today = t.ymd, cur = weekOf(today), nxt = addDays(cur, 7);
+    var posts = allPosts(st).map(function (p) { return { p: p, ms: tsOf(p.ymd, p.time) }; })
+      .sort(function (a, b) { return a.ms - b.ms || pageOrder(st, a.p.page) - pageOrder(st, b.p.page); });
+    var next = null;
+    for (var i = 0; i < posts.length; i++) if (posts[i].ms > now) { next = posts[i]; break; }
+    var curFuture = posts.some(function (x) { return weekOf(x.p.ymd) === cur && x.ms > now; });
+    SHOWN = TAB || (curFuture ? 'w1' : 'w2');
+
+    var active = st.pages.filter(function (p) { return p.active && p.perWeek > 0; });
+    var total = active.reduce(function (a, p) { return a + p.perWeek; }, 0);
+    var sub = [fa(active.length) + ' پیج'];
+    if (active.length && active.every(function (p) { return p.perWeek === active[0].perWeek; })) sub.push('هر پیج ' + fa(active[0].perWeek) + ' ریلز');
+    sub.push(fa(total) + ' ریلز در هفته');
+
+    var h = '<header class="top"><h1>تقویم انتشار هفتگی ریلز</h1><p class="sub">' + sub.join(' · ') + '</p></header>';
+    if (next) {
+      h += '<section class="nextcard" aria-label="ریلز بعدی"><div class="lbl">ریلز بعدی</div>' +
+        '<div class="nrow"><span class="big">' + fa(next.p.time) + '</span><span class="when">' + whenText(next.p.ymd, today) + '</span></div>' +
+        pill(st, next.p.page) + (next.p.title ? '<div class="ntitle">' + esc(next.p.title) + '</div>' : '') +
+        (next.p.note ? '<div class="nnote">' + esc(next.p.note) + '</div>' : '') +
+        '<div class="cd" data-t="' + next.ms + '"></div></section>';
+    }
+    if (OWNER) {
+      h += '<nav class="tools" aria-label="ابزارها"><button type="button" data-act="add">ریلز دستی</button>' +
+        '<button type="button" data-act="rebuild">بازسازی هفته</button><button type="button" data-act="perf">عملکرد پیج‌ها</button>' +
+        '<button type="button" data-act="settings">تنظیمات</button></nav>';
+      var pend = posts.filter(function (x) { return x.p.views == null && x.ms + 20 * 3600000 <= now && x.ms > now - 28 * 86400000; });
+      if (pend.length) {
+        h += '<section class="pending"><div class="phead"><b>ویوهای منتظر ثبت</b><small>ویو ۲۴ ساعت اول هر ریلز</small></div>' +
+          pend.map(function (x) {
+            return '<label class="prow"><span class="pinfo">' + pill(st, x.p.page) + '<small>' + DAY[pday(x.p.ymd)] + ' ' + jDate(x.p.ymd) + ' · ساعت ' + fa(x.p.time) +
+              (x.p.title ? ' · ' + esc(x.p.title) : '') + '</small></span><input data-views="' + esc(x.p.id) + '" inputmode="numeric" autocomplete="off" placeholder="ویو"></label>';
+          }).join('') +
+          '<p class="perr" hidden></p><button type="button" class="btn primary wide" data-act="saveViews">ذخیره ویوها</button></section>';
+      }
+    }
+    h += '<nav class="tabs" role="tablist">' +
+      '<button type="button" role="tab" data-tab="w1" class="' + (SHOWN === 'w1' ? 'on' : '') + '" aria-selected="' + (SHOWN === 'w1') + '">این هفته</button>' +
+      '<button type="button" role="tab" data-tab="w2" class="' + (SHOWN === 'w2' ? 'on' : '') + '" aria-selected="' + (SHOWN === 'w2') + '">هفته بعد</button></nav>';
+    h += panel(st, cur, 'w1', posts, next, now, today) + panel(st, nxt, 'w2', posts, next, now, today);
+    if (!OWNER) h += '<p class="foot"><button type="button" class="linkbtn" data-act="login">ویرایش</button></p>';
+    ROOT.innerHTML = h;
+    tick();
+  }
+
+  function panel(st, ws, id, posts, next, now, today) {
+    var wk = st.weeks[ws], inWeek = posts.filter(function (x) { return weekOf(x.p.ymd) === ws; });
+    var head = '<section class="panel" id="' + id + '" role="tabpanel"' + (SHOWN === id ? '' : ' hidden') + '><p class="wlabel">' + weekLabel(ws) + '</p>';
+    var notice = '';
+    if (ws >= st.startWeek && (!wk || !wk.built)) {
+      notice = 'برنامه این هفته ' + DAY[st.settings.buildDay] + ' ساعت ' + fa(st.settings.buildHour) + ' خودکار چیده می‌شود' +
+        (inWeek.length ? '؛ ریلزهای زیر از قبل ثبت شده‌اند.' : '.');
+    }
+    if (!inWeek.length) return head + '<div class="empty">' + (notice || 'برای این هفته ریلزی ثبت نشده است.') + '</div></section>';
+    var rows = '';
+    for (var i = 0; i < 7; i++) {
+      var ymd = addDays(ws, i), list = inWeek.filter(function (x) { return x.p.ymd === ymd; });
+      rows += '<div class="day' + (ymd === today ? ' today' : '') + (ymd < today ? ' past' : '') + '"><div class="dname"><b>' + DAY[i] + '</b><small>' +
+        (ymd === today ? 'امروز' : jDate(ymd)) + '</small></div><div class="posts">' +
+        (list.length ? list.map(function (x) { return postHtml(st, x, next, now); }).join('') : '<span class="none"></span>') + '</div></div>';
+    }
+    var names = [];
+    inWeek.forEach(function (x) { if (names.indexOf(x.p.page) < 0) names.push(x.p.page); });
+    names.sort(function (a, b) { return pageOrder(st, a) - pageOrder(st, b); });
+    var cards = names.map(function (n) {
+      return '<div class="pcard">' + pill(st, n) + '<p>' + inWeek.filter(function (x) { return x.p.page === n; })
+        .map(function (x) { return DAY[pday(x.p.ymd)] + ' ' + fa(x.p.time); }).join('<br>') + '</p></div>';
+    }).join('');
+    var warn = OWNER && wk && wk.warnings && wk.warnings.length ? '<p class="warn">' + wk.warnings.map(esc).join('؛ ') + '</p>' : '';
+    return head + (notice ? '<p class="notice">' + notice + '</p>' : '') + warn + '<div class="card">' + rows + '</div><div class="grid">' + cards + '</div></section>';
+  }
+
+  function postHtml(st, x, next, now) {
+    var p = x.p, cls = 'post' + (x.ms <= now ? ' done' : '') + (next && next.p.id === p.id ? ' next' : '');
+    var meta = [];
+    if (OWNER) {
+      if (p.views != null) meta.push(compact(p.views) + ' ویو');
+      else if (p.posted) meta.push('منتشر شد، ویو ثبت نشده');
+      else if (x.ms <= now) meta.push('ویو ثبت نشده');
+      if (p.reason && REASON[p.reason]) meta.push(REASON[p.reason]);
+    }
+    var inner = '<span class="time">' + fa(p.time) + '</span>' + pill(st, p.page) +
+      (p.title ? '<span class="ttl">' + esc(p.title) + '</span>' : '') +
+      (p.note ? '<span class="ttl note">' + esc(p.note) + '</span>' : '') +
+      (meta.length ? '<span class="ttl meta">' + meta.join(' · ') + '</span>' : '');
+    return OWNER ? '<button type="button" class="' + cls + ' editable" data-post="' + esc(p.id) + '">' + inner + '</button>'
+      : '<div class="' + cls + '">' + inner + '</div>';
+  }
+
+  function tick() {
+    var els = document.querySelectorAll('[data-t]');
+    for (var i = 0; i < els.length; i++) {
+      var d = Number(els[i].getAttribute('data-t')) - Date.now();
+      if (d <= 0) {
+        els[i].textContent = 'وقت انتشار رسیده است';
+        if (d < -90000 && !dirty()) { render(); return; }
+        continue;
+      }
+      var m = Math.floor(d / 60000), dd = Math.floor(m / 1440), hh = Math.floor((m % 1440) / 60), mm = m % 60, parts = [];
+      if (dd) parts.push(fa(dd) + ' روز');
+      if (hh) parts.push(fa(hh) + ' ساعت');
+      if (!dd && mm) parts.push(fa(mm) + ' دقیقه');
+      els[i].textContent = (parts.length ? parts.join(' و ') : 'کمتر از یک دقیقه') + ' دیگر';
+    }
+  }
+  function dirty() {
+    if (document.getElementById('sheetwrap') || BUSY) return true;
+    var a = document.activeElement;
+    if (a && /^(INPUT|SELECT|TEXTAREA)$/.test(a.tagName)) return true;
+    var ins = ROOT.querySelectorAll('[data-views]');
+    for (var i = 0; i < ins.length; i++) if (ins[i].value) return true;
+    return false;
+  }
+
+  /* ── پنجره‌ها ── */
+  function field(label, control, hint) { return '<label class="field"><span>' + label + '</span>' + control + (hint ? '<small>' + hint + '</small>' : '') + '</label>'; }
+  function group(title, inner) { return '<section class="grp"><h3>' + title + '</h3>' + inner + '</section>'; }
+  function val(wrap, name) { var el = wrap.querySelector('[name="' + name + '"]'); return el ? (el.type === 'checkbox' ? el.checked : el.value) : null; }
+  function openSheet(title, body, buttons) {
+    closeSheet();
+    var wrap = document.createElement('div');
+    wrap.id = 'sheetwrap';
+    wrap.innerHTML = '<div class="backdrop" data-close></div><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(title) + '" tabindex="-1">' +
+      '<div class="shead"><b>' + esc(title) + '</b><button type="button" class="x" data-close>بستن</button></div>' +
+      '<div class="sbody">' + body + '<p class="serr" hidden></p>' +
+      (buttons.length ? '<div class="sfoot">' + buttons.map(function (b, i) { return '<button type="button" class="btn ' + b.kind + '" data-b="' + i + '">' + b.label + '</button>'; }).join('') + '</div>' : '') +
+      '</div></div>';
+    document.body.appendChild(wrap);
+    document.documentElement.classList.add('locked');
+    wrap.addEventListener('click', function (e) {
+      var tg = e.target;
+      if (tg.closest('[data-close]')) { if (!BUSY) closeSheet(); return; }
+      var b = tg.closest('[data-b]');
+      if (b && !BUSY && !b.disabled) buttons[Number(b.getAttribute('data-b'))].fn(wrap, b);
+    });
+    wrap.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !BUSY) closeSheet(); });
+    try { wrap.querySelector('.sheet').focus({ preventScroll: true }); } catch (er) { }
+    return wrap;
+  }
+  function closeSheet() {
+    var w = document.getElementById('sheetwrap');
+    if (w) w.parentNode.removeChild(w);
+    document.documentElement.classList.remove('locked');
+  }
+  function sheetErr(wrap, msg) { var e = wrap.querySelector('.serr'); e.textContent = msg; e.hidden = false; }
+
+  function openLogin() {
+    openSheet('ورود برای ویرایش', field('کلید ویرایش', '<input name="key" dir="ltr" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="github_pat_…">'),
+      [{ label: 'ورود', kind: 'primary', fn: function (w, b) {
+        var k = String(val(w, 'key') || '').trim();
+        if (!k) return sheetErr(w, 'کلید را وارد کن');
+        b.disabled = true;
+        checkKey(k).then(function (ok) {
+          b.disabled = false;
+          if (ok === false) return sheetErr(w, 'این کلید اجازه ویرایش ندارد');
+          if (ok === null) return sheetErr(w, 'اتصال برقرار نشد؛ دوباره امتحان کن');
+          rememberKey(k); OWNER = true; closeSheet(); render(); toast('حالت ویرایش فعال شد'); refresh(true);
+        });
+      } }]);
+  }
+  function openPost(id) {
+    var f = findPost(VIEW, id);
+    if (!f) return;
+    var p = f.post, ws = weekOf(p.ymd), days = '';
+    for (var i = 0; i < 7; i++) {
+      var ymd = addDays(ws, i);
+      days += '<option value="' + ymd + '"' + (ymd === p.ymd ? ' selected' : '') + '>' + DAY[i] + ' ' + jDate(ymd) + '</option>';
+    }
+    var pages = VIEW.pages.filter(function (pg) { return pg.active || pg.id === p.page; }).map(function (pg) {
+      return '<option value="' + esc(pg.id) + '"' + (pg.id === p.page ? ' selected' : '') + '>' + esc(pg.name) + '</option>';
+    }).join('');
+    var body = field('پیج', '<select name="page">' + pages + '</select>') +
+      '<div class="two">' + field('روز', '<select name="ymd">' + days + '</select>') + field('ساعت', '<input name="time" type="time" value="' + esc(p.time) + '">') + '</div>' +
+      field('عنوان ریلز', '<input name="title" value="' + esc(p.title) + '" placeholder="اختیاری" autocomplete="off">') +
+      field('یادداشت', '<input name="note" value="' + esc(p.note) + '" placeholder="اختیاری" autocomplete="off">') +
+      '<div class="two">' + field('ویو ۲۴ ساعت اول', '<input name="views" inputmode="numeric" autocomplete="off" value="' + (p.views != null ? fa(p.views) : '') + '" placeholder="مثلاً ۱۲۵۰۰">') +
+      '<label class="check"><input type="checkbox" name="posted"' + (p.posted ? ' checked' : '') + '><span>منتشر شد</span></label></div>' +
+      (p.reason && REASON[p.reason] ? '<p class="hint">دلیل انتخاب این ساعت: ' + REASON[p.reason] + '</p>' : '');
+    openSheet('ویرایش ریلز', body, [
+      { label: 'ذخیره', kind: 'primary', fn: function (w) { savePost(w, id); } },
+      { label: 'حذف این ریلز', kind: 'danger', fn: function (w, b) {
+        if (!b.classList.contains('sure')) { b.classList.add('sure'); b.textContent = 'مطمئنی؟ دوباره بزن'; return; }
+        act(function (s) { var g = findPost(s, id); if (g) s.weeks[g.week].posts.splice(g.index, 1); }, 'ریلز حذف شد');
+      } }
+    ]);
+  }
+  function savePost(wrap, id) {
+    var time = parseTime(val(wrap, 'time')), views = parseViews(val(wrap, 'views'));
+    if (!time) return sheetErr(wrap, 'ساعت را درست وارد کن');
+    if (views !== null && isNaN(views)) return sheetErr(wrap, 'ویو باید عدد باشد؛ مثلاً ۱۲۵۰۰ یا 12k');
+    var page = val(wrap, 'page'), ymd = val(wrap, 'ymd');
+    var title = String(val(wrap, 'title') || '').trim().slice(0, 140), note = String(val(wrap, 'note') || '').trim().slice(0, 200), posted = !!val(wrap, 'posted');
+    act(function (s) {
+      var g = findPost(s, id);
+      if (!g) return;
+      var q = g.post;
+      if (q.page !== page || q.ymd !== ymd || q.time !== time) { q.manual = true; q.reason = 'manual'; }
+      q.page = page; q.ymd = ymd; q.time = time; q.title = title; q.note = note; q.views = views; q.posted = posted || views > 0;
+      s.weeks[g.week].posts.sort(byTime);
+    }, 'ذخیره شد');
+  }
+  function saveViews() {
+    var inputs = ROOT.querySelectorAll('[data-views]'), vals = {}, bad = false, any = false;
+    for (var i = 0; i < inputs.length; i++) {
+      var v = parseViews(inputs[i].value);
+      if (v === null) continue;
+      if (isNaN(v)) { bad = true; inputs[i].classList.add('bad'); continue; }
+      vals[inputs[i].getAttribute('data-views')] = v;
+      any = true;
+    }
+    var err = ROOT.querySelector('.perr');
+    if (bad) { err.textContent = 'ویو باید عدد باشد؛ مثلاً ۱۲۵۰۰ یا 12k'; err.hidden = false; return; }
+    if (!any) { err.textContent = 'حداقل یک ویو وارد کن'; err.hidden = false; return; }
+    act(function (s) {
+      Object.keys(vals).forEach(function (pid) { var g = findPost(s, pid); if (g) { g.post.views = vals[pid]; g.post.posted = true; } });
+    }, 'ویوها ذخیره شد');
+  }
+  function openAdd() {
+    var now = Date.now(), t = nowT(now), cur = weekOf(t.ymd), dates = [];
+    for (var i = 0; i < 14; i++) { var y = addDays(cur, i); if (y >= t.ymd) dates.push(y); }
+    var def = SHOWN === 'w2' ? addDays(cur, 7) : dates[0];
+    if (dates.indexOf(def) < 0) def = dates[0];
+    var actives = VIEW.pages.filter(function (p) { return p.active; });
+    if (!actives.length) return openSheet('ریلز دستی', '<p class="hint">هیچ پیج فعالی نیست؛ از تنظیمات یک پیج را فعال کن.</p>', []);
+    var opts = dates.map(function (y) { return '<option value="' + y + '"' + (y === def ? ' selected' : '') + '>' + DAY[pday(y)] + ' ' + jDate(y) + (y === t.ymd ? ' (امروز)' : '') + '</option>'; }).join('');
+    var body = field('پیج', '<select name="page">' + actives.map(function (p) { return '<option value="' + esc(p.id) + '">' + esc(p.name) + '</option>'; }).join('') + '</select>') +
+      '<div class="two">' + field('روز', '<select name="ymd">' + opts + '</select>') + field('ساعت', '<input name="time" type="time" value="18:30">') + '</div>' +
+      field('عنوان ریلز', '<input name="title" placeholder="اختیاری" autocomplete="off">') +
+      field('یادداشت', '<input name="note" placeholder="اختیاری" autocomplete="off">') +
+      '<p class="hint">این ریلز اضافه بر برنامه است و جایش ثابت می‌ماند. برای جابه‌جا کردن یک ریلز، روی خودش بزن.</p>';
+    openSheet('ریلز دستی', body, [{ label: 'اضافه کن', kind: 'primary', fn: function (w) {
+      var time = parseTime(val(w, 'time'));
+      if (!time) return sheetErr(w, 'ساعت را درست وارد کن');
+      var ymd = val(w, 'ymd'), page = val(w, 'page');
+      if (tsOf(ymd, time) <= Date.now()) return sheetErr(w, 'این ساعت گذشته است');
+      var extra = { title: String(val(w, 'title') || '').trim().slice(0, 140), note: String(val(w, 'note') || '').trim().slice(0, 200) };
+      act(function (s) {
+        var ws = weekOf(ymd), wk = s.weeks[ws] || (s.weeks[ws] = { built: false, posts: [], warnings: [] });
+        s.seq = (s.seq || 0) + 1;
+        wk.posts.push(newPost('m' + s.seq, page, ymd, time, 'manual', extra));
+        wk.posts.sort(byTime);
+      }, 'ریلز دستی اضافه شد');
+    } }]);
+  }
+  function openRebuild() {
+    var now = Date.now(), cur = weekOf(nowT(now).ymd), ws = SHOWN === 'w1' ? cur : addDays(cur, 7), wk = VIEW.weeks[ws];
+    if (!wk || !wk.built) {
+      return openSheet('بازسازی هفته', '<p class="hint">برنامه ' + weekLabel(ws) + ' هنوز ساخته نشده؛ ' + DAY[VIEW.settings.buildDay] + ' ساعت ' + fa(VIEW.settings.buildHour) + ' خودکار چیده می‌شود.</p>', []);
+    }
+    var movable = wk.posts.filter(function (p) { return !(p.manual || p.posted || p.views != null || tsOf(p.ymd, p.time) <= now); }).length;
+    if (!movable) return openSheet('بازسازی هفته', '<p class="hint">در ' + weekLabel(ws) + ' ریلز خودکاری برای جابه‌جایی نمانده است.</p>', []);
+    openSheet('بازسازی ' + weekLabel(ws),
+      '<p class="hint">' + fa(movable) + ' ریلز خودکارِ آینده این هفته دوباره چیده می‌شوند. ریلزهای دستی، گذشته، منتشرشده و ویودار ثابت می‌مانند و عنوان هر ریلز به ریلز تازه همان پیج منتقل می‌شود.</p>',
+      [{ label: 'دوباره بچین', kind: 'primary', fn: function () { act(function (s, t) { rebuildWeek(s, ws, t); }, 'برنامه دوباره چیده شد'); } }]);
+  }
+  function openPerf() {
+    var st = VIEW, slotMin = st.slots.map(toMin), all = allPosts(st);
+    var body = st.pages.filter(function (p) { return p.active; }).map(function (p) {
+      var rows = all.filter(function (x) { return x.page === p.id && x.views > 0; });
+      if (!rows.length) return '<div class="perf"><div class="perfhead">' + pill(st, p.id) + '<small>هنوز ویویی ثبت نشده</small></div></div>';
+      var by = {};
+      rows.forEach(function (r) { var m = toMin(r.time), k = nearest(m, slotMin); if (Math.abs(slotMin[k] - m) <= 45) (by[k] = by[k] || []).push(r.views); });
+      var best = -1, bestMed = -1;
+      Object.keys(by).forEach(function (k) { var md = median(by[k]); if (by[k].length >= 2 && md > bestMed) { bestMed = md; best = Number(k); } });
+      var trs = st.slots.map(function (s, i) {
+        return '<tr' + (i === best ? ' class="best"' : '') + '><td>' + fa(s) + '</td><td>' + (by[i] ? compact(median(by[i])) : '—') + '</td><td>' + fa(by[i] ? by[i].length : 0) + '</td></tr>';
+      }).join('');
+      return '<div class="perf"><div class="perfhead">' + pill(st, p.id) + '<small>میانه ' + compact(median(rows.map(function (r) { return r.views; }))) + ' ویو · ' + fa(rows.length) + ' ریلز</small></div>' +
+        '<table><thead><tr><th>ساعت</th><th>میانه ویو</th><th>تعداد</th></tr></thead><tbody>' + trs + '</tbody></table></div>';
+    }).join('');
+    openSheet('عملکرد پیج‌ها', '<p class="hint">ردیف طلایی ساعتی است که تا الان بهترین جواب را داده (با حداقل دو ریلز). هرچه ویوی بیشتری ثبت شود، برنامه دقیق‌تر می‌شود.</p>' + body, []);
+  }
+  function openSettings() {
+    var st = VIEW, se = st.settings;
+    function colorOpts(c) { return Object.keys(COLORS).map(function (k) { return '<option value="' + k + '"' + (k === c ? ' selected' : '') + '>' + COLORS[k].label + '</option>'; }).join(''); }
+    function pageRow(p, i) {
+      return '<div class="prow3" data-pi="' + i + '"><input name="pname" value="' + esc(p.name) + '" aria-label="نام پیج" autocomplete="off">' +
+        '<input name="pweek" inputmode="numeric" value="' + fa(p.perWeek) + '" aria-label="ریلز در هفته">' +
+        '<select name="pcolor" aria-label="رنگ">' + colorOpts(p.color) + '</select>' +
+        '<label class="check"><input type="checkbox" name="pactive"' + (p.active ? ' checked' : '') + '><span>فعال</span></label></div>';
+    }
+    function numIn(name, v) { return '<input name="' + name + '" inputmode="decimal" autocomplete="off" value="' + fa(v) + '">'; }
+    var aud = '<div class="scrollx"><table class="aud"><thead><tr><th>پیج</th>' + DAY.map(function (d) { return '<th>' + d + '</th>'; }).join('') +
+      st.slots.map(function (s) { return '<th>' + fa(s) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      st.pages.map(function (p, i) {
+        return '<tr><th>' + esc(p.name) + '</th>' +
+          p.dayW.map(function (v, d) { return '<td><input data-aud="' + i + '|d|' + d + '" inputmode="numeric" value="' + fa(v) + '" aria-label="' + esc(p.name) + ' ' + DAY[d] + '"></td>'; }).join('') +
+          st.slots.map(function (s) { return '<td><input data-aud="' + i + '|t|' + s + '" inputmode="numeric" value="' + fa(p.timeW[s] != null ? p.timeW[s] : 70) + '" aria-label="' + esc(p.name) + ' ' + fa(s) + '"></td>'; }).join('') + '</tr>';
+      }).join('') + '</tbody></table></div>';
+    var dayOpts = DAY.map(function (d, i) { return '<option value="' + i + '"' + (i === se.buildDay ? ' selected' : '') + '>' + d + '</option>'; }).join('');
+    var body =
+      group('بازه انتشار', '<div class="two">' + field('زودترین ساعت', '<input name="earliest" type="time" value="' + se.earliest + '">') +
+        field('دیرترین ساعت', '<input name="latest" type="time" value="' + se.latest + '">') + '</div>' +
+        field('ساعت‌های قابل انتخاب', '<input name="slots" value="' + fa(st.slots.join('، ')) + '" autocomplete="off">', 'ساعتی که بیرون از بازه باشد انتخاب نمی‌شود')) +
+      group('پیج‌ها', '<div class="phead3"><span>نام</span><span>در هفته</span><span>رنگ</span><span></span></div><div class="prows">' + st.pages.map(pageRow).join('') +
+        '</div><button type="button" class="btn ghost" data-addpage>افزودن پیج</button>') +
+      group('قانون‌ها', '<div class="two">' + field('فاصله دو ریلز یک پیج (روز)', numIn('minDayGap', se.minDayGap)) + field('حداکثر ریلز در روز', numIn('maxPerDay', se.maxPerDay)) + '</div>' +
+        field('فاصله ریلزهای یک روز (ساعت)', numIn('minHourGap', se.minHourGap)) +
+        field('جسارت در تست ساعت‌های تازه', '<input name="explore" type="range" min="0" max="1" step="0.1" value="' + se.explore + '">', 'کم: فقط بهترین ساعت‌ها · زیاد: تست بیشتر') +
+        field('وزن ویوهای ثبت‌شده', '<input name="learn" type="range" min="0" max="1" step="0.1" value="' + se.learn + '">', 'هرچه بیشتر، ویوها اثر بیشتری روی انتخاب ساعت دارند')) +
+      group('ساخت خودکار برنامه هفته بعد', '<div class="two">' + field('روز', '<select name="buildDay">' + dayOpts + '</select>') + field('ساعت (۰ تا ۲۳)', numIn('buildHour', se.buildHour)) + '</div>') +
+      group('روزهای بدون انتشار', field('تاریخ‌ها', '<input name="blocked" value="' + fa(se.blocked.map(jSlash).join('، ')) + '" placeholder="مثلاً ۱۴۰۵/۰۹/۱۰" autocomplete="off">', 'برای عزاداری یا مناسبت خاص؛ با ویرگول جدا کن')) +
+      group('فعالیت مخاطب', '<p class="hint">از اینسایت هر پیج: شلوغ‌ترین روز و ساعت را ۱۰۰ بگذار و بقیه را نسبت به آن، بین ۰ تا ۱۰۰.</p>' + aud) +
+      group('لینک ویرایش', '<p class="hint">هر کس این لینک را داشته باشد می‌تواند برنامه را ویرایش کند.</p>' +
+        '<div class="two"><button type="button" class="btn ghost" data-copylink>کپی لینک ویرایش</button><button type="button" class="btn ghost" data-logout>خروج از ویرایش</button></div>') +
+      '<label class="check big"><input type="checkbox" name="reapply" checked><span>ریلزهای آینده با این تنظیمات دوباره چیده شوند</span></label>';
+    var wrap = openSheet('تنظیمات', body, [{ label: 'ذخیره تنظیمات', kind: 'primary', fn: saveSettings }]);
+    wrap.querySelector('[data-addpage]').addEventListener('click', function () {
+      var box = wrap.querySelector('.prows');
+      box.insertAdjacentHTML('beforeend', pageRow({ name: '', perWeek: 2, color: 'grey', active: true }, box.children.length));
+      box.lastElementChild.querySelector('input').focus();
+    });
+    wrap.querySelector('[data-copylink]').addEventListener('click', function (e) {
+      var btn = e.currentTarget, link = location.origin + location.pathname + '#k=' + encodeURIComponent(KEY || '');
+      var p = navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(link) : Promise.reject();
+      p.then(function () { btn.textContent = 'کپی شد'; }, function () { window.prompt('لینک ویرایش', link); });
+    });
+    wrap.querySelector('[data-logout]').addEventListener('click', function () {
+      forgetKey(); OWNER = false;
+      if (/[#&]k=/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search);
+      closeSheet(); render(); toast('از حالت ویرایش خارج شدی');
+    });
+  }
+  function saveSettings(wrap) {
+    var e1 = parseTime(val(wrap, 'earliest')), e2 = parseTime(val(wrap, 'latest'));
+    if (!e1 || !e2) return sheetErr(wrap, 'ساعت‌های بازه انتشار را درست وارد کن');
+    var a = toMin(e1), b = toMin(e2);
+    if (b < a && b + 720 > a && b + 720 < 1440) b += 720; // «۸» یعنی ۸ شب
+    if (b < a) return sheetErr(wrap, 'دیرترین ساعت باید بعد از زودترین ساعت باشد');
+    var slots = [];
+    en(val(wrap, 'slots')).split(/[\u060C,\s]+/).forEach(function (x) { var t = parseTime(x); if (t && slots.indexOf(t) < 0) slots.push(t); });
+    slots.sort(function (x, y) { return toMin(x) - toMin(y); });
+    if (!slots.some(function (x) { var m = toMin(x); return m >= a && m <= b; })) return sheetErr(wrap, 'هیچ‌کدام از ساعت‌های قابل انتخاب داخل بازه انتشار نیست');
+    var blocked = [], badDate = false;
+    en(val(wrap, 'blocked')).split(/[\u060C,\s]+/).forEach(function (x) {
+      if (!x) return;
+      var y = parseJalali(x);
+      if (y) { if (blocked.indexOf(y) < 0) blocked.push(y); } else badDate = true;
+    });
+    if (badDate) return sheetErr(wrap, 'تاریخ‌های بدون انتشار را به شکل ۱۴۰۵/۰۹/۱۰ بنویس');
+    var rows = wrap.querySelectorAll('.prow3'), pagesIn = [];
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      pagesIn.push({
+        i: Number(r.getAttribute('data-pi')), name: r.querySelector('[name="pname"]').value.trim().slice(0, 40),
+        perWeek: clamp(Math.round(num(r.querySelector('[name="pweek"]').value, 2)), 0, 7),
+        color: r.querySelector('[name="pcolor"]').value, active: r.querySelector('[name="pactive"]').checked
+      });
+    }
+    if (pagesIn.some(function (p) { return p.i < VIEW.pages.length && !p.name; })) return sheetErr(wrap, 'نام پیج نمی‌تواند خالی باشد');
+    var aud = {}, ins = wrap.querySelectorAll('[data-aud]');
+    for (var k = 0; k < ins.length; k++) aud[ins[k].getAttribute('data-aud')] = clamp(num(ins[k].value, 70), 0, 100);
+    var rules = {
+      minDayGap: clamp(Math.round(num(val(wrap, 'minDayGap'), 2)), 1, 6),
+      maxPerDay: clamp(Math.round(num(val(wrap, 'maxPerDay'), 2)), 1, 10),
+      minHourGap: clamp(num(val(wrap, 'minHourGap'), 3), 0, 12),
+      explore: clamp(num(val(wrap, 'explore'), 0.4), 0, 1),
+      learn: clamp(num(val(wrap, 'learn'), 0.5), 0, 1),
+      buildDay: clamp(Math.round(num(val(wrap, 'buildDay'), 4)), 0, 6),
+      buildHour: clamp(Math.round(num(val(wrap, 'buildHour'), 20)), 0, 23)
+    };
+    var reapply = !!val(wrap, 'reapply');
+    act(function (s, now) {
+      Object.assign(s.settings, rules, { earliest: hm(a), latest: hm(b), blocked: blocked });
+      s.slots = slots;
+      pagesIn.forEach(function (pi) {
+        var p = s.pages[pi.i];
+        if (!p) {
+          if (!pi.name) return;
+          s.seq = (s.seq || 0) + 1;
+          var tw = {};
+          slots.forEach(function (x) { tw[x] = 70; });
+          s.pages.push({ id: 'p' + s.seq, name: pi.name, perWeek: pi.perWeek, color: pi.color, active: pi.active, dayW: DEFAULT_DAY_W.slice(), timeW: tw });
+          return;
+        }
+        p.name = pi.name; p.perWeek = pi.perWeek; p.color = pi.color; p.active = pi.active;
+        Object.keys(aud).forEach(function (key) {
+          var parts = key.split('|');
+          if (Number(parts[0]) !== pi.i) return;
+          if (parts[1] === 'd') p.dayW[Number(parts[2])] = aud[key]; else p.timeW[parts[2]] = aud[key];
+        });
+        slots.forEach(function (x) { if (p.timeW[x] == null) p.timeW[x] = 70; });
+      });
+      if (reapply) {
+        var cw = weekOf(nowT(now).ymd);
+        [cw, addDays(cw, 7)].forEach(function (w) { rebuildWeek(s, w, now); });
+      }
+    }, 'تنظیمات ذخیره شد');
+  }
+
+  /* ── ذخیره: همیشه روی آخرین نسخه فایل، تا ویرایش دو نفر روی هم نیفتد ── */
+  function act(mutate, flash) {
+    if (BUSY) return;
+    if (!OWNER || !KEY) { openLogin(); return; }
+    BUSY = true;
+    document.documentElement.classList.add('busy');
+    toast('در حال ذخیره…', true);
+    commit(mutate, flash, 0);
+  }
+  function commit(mutate, flash, attempt) {
+    var s;
+    fetchData(true).then(function (d) {
+      var now = Date.now();
+      s = materialize(d.state, now); // هفته‌هایی که همه دیده‌اند، همان‌طور ثابت می‌شوند
+      mutate(s, now);
+      return fetch(FILE_API, { method: 'PUT', headers: hdr(true, true), body: JSON.stringify({
+        message: flash || 'به‌روزرسانی تقویم', content: b64enc(JSON.stringify(s, null, 1) + '\n'), sha: d.sha, branch: CFG.branch
+      }) });
+    }).then(function (r) {
+      if (!r.ok) throw httpErr(r.status);
+      return r.json();
+    }).then(function (j) {
+      STATE = s; SHA = j && j.content ? j.content.sha : null; LAST = Date.now();
+      BUSY = false; document.documentElement.classList.remove('busy');
+      closeSheet(); render(); toast(flash);
+    }).catch(function (e) {
+      var st = e && e.status;
+      if ((st === 409 || st === 422) && attempt < 2) { commit(mutate, flash, attempt + 1); return; }
+      BUSY = false; document.documentElement.classList.remove('busy');
+      if (st === 401 || st === 403 || st === 404) { forgetKey(); OWNER = false; closeSheet(); render(); toast('کلید ویرایش معتبر نیست یا اجازه ذخیره ندارد'); return; }
+      toast(st ? 'ذخیره نشد؛ دوباره امتحان کن' : 'اتصال برقرار نشد؛ دوباره امتحان کن');
+    });
+  }
+  var toastTimer = null;
+  function toast(msg, sticky) {
+    if (!msg) return;
+    var el = document.getElementById('toast');
+    if (!el) { el = document.createElement('div'); el.id = 'toast'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+    el.textContent = msg;
+    el.className = 'show';
+    clearTimeout(toastTimer);
+    if (!sticky) toastTimer = setTimeout(function () { el.className = ''; }, 2600);
+  }
+
+  /* ── شروع ── */
+  ROOT.addEventListener('click', function (e) {
+    var t = e.target, tab = t.closest('[data-tab]');
+    if (tab) {
+      TAB = SHOWN = tab.getAttribute('data-tab');
+      var bs = ROOT.querySelectorAll('[data-tab]'), ps = ROOT.querySelectorAll('.panel');
+      for (var i = 0; i < bs.length; i++) { var on = bs[i].getAttribute('data-tab') === SHOWN; bs[i].classList.toggle('on', on); bs[i].setAttribute('aria-selected', String(on)); }
+      for (var j = 0; j < ps.length; j++) ps[j].hidden = ps[j].id !== SHOWN;
+      return;
+    }
+    var a = t.closest('[data-act]'), k = a ? a.getAttribute('data-act') : '';
+    if (k === 'login') { openLogin(); return; }
+    if (k === 'retry') { location.reload(); return; }
+    if (!OWNER || BUSY) return;
+    var post = t.closest('[data-post]');
+    if (post) { openPost(post.getAttribute('data-post')); return; }
+    if (k === 'add') openAdd(); else if (k === 'rebuild') openRebuild(); else if (k === 'perf') openPerf();
+    else if (k === 'settings') openSettings(); else if (k === 'saveViews') saveViews();
+  });
+  ROOT.addEventListener('input', function (e) { if (e.target.classList && e.target.classList.contains('bad')) e.target.classList.remove('bad'); });
+
+  ROOT.innerHTML = '<div class="loading">در حال بارگذاری برنامه…</div>';
+  var hk = (location.hash.match(/[#&]k=([^&]+)/) || [])[1];
+  if (hk) { try { rememberKey(decodeURIComponent(hk)); } catch (e) { } }
+  else { try { KEY = localStorage.getItem(LS_KEY); } catch (e) { } }
+  (KEY ? checkKey(KEY) : Promise.resolve(false)).then(function (ok) {
+    if (ok === false && KEY) forgetKey();
+    OWNER = !!KEY && ok !== false;
+    return fetchData(false);
+  }).then(function (d) {
+    STATE = d.state; SHA = d.sha; LAST = Date.now();
+    render();
+  }, function () {
+    ROOT.innerHTML = '<div class="empty">برنامه بارگذاری نشد. <button type="button" class="linkbtn" data-act="retry">دوباره امتحان کن</button></div>';
+  });
+  setInterval(tick, 30000);
+  setInterval(function () { if (STATE && Date.now() - LAST > (OWNER ? 60000 : 300000)) refresh(false); }, 15000);
+  setInterval(function () { if (STATE && !dirty()) render(); }, 300000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && STATE && Date.now() - LAST > 20000) refresh(false); });
+})();
+</script>
+</body>
+</html>
